@@ -1,8 +1,8 @@
 tdcli = dofile('./tg/tdcli.lua')
 serpent = (loadfile "./libs/serpent.lua")()
 feedparser = (loadfile "./libs/feedparser.lua")()
-our_id = 265541133 -- Put Here Your Bot ID
---ایدی رباتتونو اینجا بزارید
+our_id = 274807882
+322190322
 URL = require "socket.url"
 http = require "socket.http"
 https = require "ssl.https"
