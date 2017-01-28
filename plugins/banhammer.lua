@@ -18,17 +18,17 @@ user_name = check_markdown(data.first_name_)
 end
 if is_banned(data.id_, arg.chat_id) then
    if not lang then
-		tdcli.sendMessage(arg.chat_id, arg.msg_id, 0, "_User_ "..user_name.." *[ "..data.id_.." ]* _is banned_", 0, "md")
+		tdcli.sendMessage(arg.chat_id, arg.msg_id, 0, "_Done!_\n_User_"..user_name.." *[ "..data.id_.." ]* _is banned_", 0, "md")
    else
-		tdcli.sendMessage(arg.chat_id, arg.msg_id, 0, "_کاربر_ "..user_name.." *[ "..data.id_.." ]* _از گروه محروم است_", 0, "md")
+		tdcli.sendMessage(arg.chat_id, arg.msg_id, 0, "_انجام شد!_ \n_کاربر_"..user_name.." *[ "..data.id_.." ]* _از گروه محروم است_", 0, "md")
 end
 kick_user(data.id_, arg.chat_id)
 end
 if is_gbanned(data.id_) then
      if not lang then
-		tdcli.sendMessage(arg.chat_id, arg.msg_id, 0, "_User_ "..user_name.." *[ "..data.id_.." ]* _is globally banned_", 0, "md")
+		tdcli.sendMessage(arg.chat_id, arg.msg_id, 0, "_Done!_\n_User_ "..user_name.." *[ "..data.id_.." ]* _is globally banned_", 0, "md")
     else
-		tdcli.sendMessage(arg.chat_id, arg.msg_id, 0, "_کاربر_ "..user_name.." *[ "..data.id_.." ]* _از تمام گروه های ربات محروم است_", 0, "md")
+		tdcli.sendMessage(arg.chat_id, arg.msg_id, 0, "_انجام شد!_\n_کاربر_ "..user_name.." *[ "..data.id_.." ]* _از تمام گروه های ربات محروم است_", 0, "md")
    end
 kick_user(data.id_, arg.chat_id)
      end
